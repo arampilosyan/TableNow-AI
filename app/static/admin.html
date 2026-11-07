@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TableNow AI — Admin</title><link rel="stylesheet" href="/static/styles.css"></head>
+<body><header><div class="brand">TableNow <span>AI</span> <small>ADMIN</small></div><nav><a href="/">Customer view</a></nav></header>
+<main class="wrap"><section class="hero compact"><p class="eyebrow">RESTAURANT CONTROL CENTER</p><h1>Reservations, <em>in sync.</em></h1><p>Local demo admin dashboard. Change the shared key in your .env before deployment.</p></section>
+<section class="panel"><label>Admin API key<input id="adminKey" type="password" value="dev-admin-key"></label><button id="load">Load reservations</button><p id="adminMessage" class="message"></p></section>
+<section class="panel"><div class="section-head"><h2>Reservations</h2><button class="secondary" id="refresh">Refresh</button></div><div id="reservationList">Enter the admin key and load data.</div></section>
+<section class="panel"><h2>Table inventory</h2><p class="muted">Choose a restaurant to view and update its table availability.</p><select id="adminRestaurant"></select><div id="adminTables" class="table-list"></div></section>
+<section class="panel"><h2>AI demand forecast</h2><div class="form-grid"><label>Restaurant<select id="forecastRestaurant"></select></label><label>Date<input id="forecastDate" type="date"></label></div><button id="forecast">Generate forecast</button><div id="forecastResult"></div></section>
+</main><footer>TableNow AI · Admin demo</footer><script src="/static/admin.js"></script></body></html>
